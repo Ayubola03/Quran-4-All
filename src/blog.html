@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
   <title>Quran</title>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -77,37 +79,104 @@
       </nav>
     </header>
 
-    <div style="background-image: url(./images/img7.jpg);" class="text-center pt-20 pb-20">
-      <h1 class="text-white text-4xl font-bold">Blog</h1>
-      <div class="flex space-x-1 justify-center">
-        <h1 class="text-green-700 underline"><a href="./blog.html">Home</a></h1>
-        <h1 class="text-white">/ BLog</h1>
+<!-- First Background Section -->
+<div 
+  style="background-image: url(./images/img7.jpg);" 
+  class="text-center pt-20 pb-20 bg-cover bg-center">
+  <h1 class="text-white text-2xl sm:text-3xl lg:text-4xl font-bold">Blog</h1>
+  <div class="flex space-x-1 justify-center mt-4">
+    <h1 class="text-green-700 underline text-sm sm:text-base"><a href="./blog.html">Home</a></h1>
+    <h1 class="text-white text-sm sm:text-base">/ Blog</h1>
+  </div>
+</div>
+
+<!-- Blog Section Header -->
+<div class="text-center space-y-3 pt-10 bg-slate-100 px-4 sm:px-10 lg:px-20">
+  <div class="flex items-center space-x-2 justify-center">
+    <!-- Green Vertical Line -->
+    <div class="w-[3px] h-6 bg-green-600"></div>
+    <!-- Text -->
+    <span class="text-gray-800 font-semibold text-base sm:text-lg lg:text-xl">OUR BLOG</span>
+  </div>
+  <h1 class="text-2xl sm:text-3xl lg:text-4xl font-bold">Latest Information</h1>
+  <p class="text-sm sm:text-base lg:text-lg text-gray-600 leading-relaxed">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    <br class="hidden lg:block"> 
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  </p>
+</div>
+
+<!-- Blog Cards -->
+<div class="bg-slate-100 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 px-4 sm:px-10 lg:px-20 pt-10 pb-32">
+  <!-- Card 1 -->
+  <div class="">
+    <img src="./images/img8.jpg" alt="" class="w-[370px] hover:scale-105 transform transition duration-500 cursor-pointer">
+    <div class="p-5 mr-[75px] pb-12 bg-white shadow-md overflow-hidden">
+      <div class="flex items-center text-gray-500 text-sm space-x-2">
+        <ion-icon name="calendar-clear-outline" class="text-gray-500"></ion-icon>
+        <p>February 26, 2022</p>
+        <ion-icon name="chatbubble-outline" class="ml-5"></ion-icon>
+        <p>0</p>
+      </div>
+      <h2 class="text-lg font-medium mt-3">Quran Is The Major Source Of Islam</h2>
+      <p class="text-gray-600 text-sm mt-2">Quran Is The Major Source Of Islam <br> Home / Islam Quran Is The Major Source…</p>
+      <div class="flex items-center space-x-2 mt-5">
+        <ion-icon name="arrow-forward-circle" class="text-green-700 text-2xl"></ion-icon>
+        <a href="./blog.html" class="font-medium text-green-700">Read more</a>
       </div>
     </div>
+  </div>
 
-    <div class="text-center space-y-3 mt-20">
-      <div class="flex items-center space-x-2 justify-center">
-        <!-- Green Vertical Line -->
-        <div class="w-[3px] h-6 bg-green-600"></div>
-        <!-- Text -->
-        <span class="text-gray-800 font-semibold text-xl">OUR BLOG</span>
+  <!-- Repeat for Card 2 and Card 3 (as above) -->
+  <div class="">
+    <img src="./images/img2.jpg" alt="" class="w-[370px] hover:scale-105 transform transition duration-500 cursor-pointer">
+    <div class="p-5 mr-[75px] pb-10 bg-white shadow-md overflow-hidden">
+      <div class="flex items-center text-gray-500 text-sm space-x-2">
+        <ion-icon name="calendar-clear-outline" class="text-gray-500"></ion-icon>
+        <p>February 26, 2022</p>
+        <ion-icon name="chatbubble-outline" class="ml-5"></ion-icon>
+        <p>0</p>
       </div>
-      <h1 class="text-4xl font-bold">Latest Information</h1>
-      <h1 class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </h1>
+      <h2 class="text-lg font-medium mt-3">What Are The Benefits Of Reciting <br> The…</h2>
+      <p class="text-gray-600 text-sm mt-2">What Are The Benefits Of Reciting The Quran? Home / Quran What Are The Benefits…</p>
+      <div class="flex items-center space-x-2 mt-5">
+        <ion-icon name="arrow-forward-circle" class="text-green-700 text-2xl"></ion-icon>
+        <a href="./blog.html" class="font-medium text-green-700">Read more</a>
+      </div>
     </div>
+  </div>
 
-    
-
-
-
-
-
-
-
-    <div style="background-image: url(./images/img1.jpg);" class="pt-24 pb-24 pl-52">
-      <h1 class="text-6xl font-bold text-white">Lets Start Online <br> Quran Learning</h1>
-      <button class="text-l font-bold underline bg-green-700 text-white p-3 px-7 rounded-[3px] hover:bg-black mt-12"><a href="./About.html">Start Free Trial</a></button>
+  <div class="">
+    <img src="./images/img4.jpg" alt="" class="w-[370px] hover:scale-105 transform transition duration-500 cursor-pointer">
+    <div class="p-5 mr-[75px] bg-white  shadow-md overflow-hidden">
+      <div class="flex items-center text-gray-500 text-sm space-x-2">
+        <ion-icon name="calendar-clear-outline" class="text-gray-500"></ion-icon>
+        <p>January 11, 2022</p>
+        <ion-icon name="chatbubble-outline" class="ml-5"></ion-icon>
+        <p>0</p>
+      </div>
+      <h2 class="text-lg font-medium mt-3">Connecting To Allah Through The <br> Quran</h2>
+      <p class="text-gray-600 text-sm mt-2">Connecting To Allah Through The Quran <br> Home / Quran Connecting To Allah Through The Quran…</p>
+      <div class="flex items-center space-x-2 mt-5">
+        <ion-icon name="arrow-forward-circle" class="text-green-700 text-2xl"></ion-icon>
+        <a href="./blog.html" class="font-medium text-green-700">Read more</a>
+      </div>
     </div>
+  </div>
+</div>
+
+<!-- Last Background Section -->
+<div 
+  style="background-image: url(./images/img1.jpg);" 
+  class="pt-24 pb-24 px-4 sm:px-10 lg:px-20 bg-cover bg-center text-center lg:text-left">
+  <h1 class="text-3xl sm:text-4xl lg:text-6xl font-bold text-white">
+    Let's Start Online <br> Quran Learning
+  </h1>
+  <button class="text-sm sm:text-base font-bold bg-green-700 text-white px-5 py-2 rounded hover:bg-black mt-6 lg:mt-12">
+    <a href="./About.html">Start Free Trial</a>
+  </button>
+</div>
+
 
 
     <footer class="bg-[#212831]">
